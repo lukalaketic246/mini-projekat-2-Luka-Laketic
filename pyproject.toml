@@ -1,0 +1,16 @@
+[project]
+name = "mini-projekat-2"
+version = "0.1.0"
+description = "Mini okvir za ML eksperimente"
+requires-python = ">=3.11,<3.15"
+dependencies = ["scikit-learn>=1.5,<2"]
+
+[dependency-groups]
+dev = ["pytest", "ruff"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88
